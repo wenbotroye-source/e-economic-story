@@ -1,0 +1,70 @@
+# ============================================
+# 服务商配置 - 简化版
+# ============================================
+
+# 服务商配置
+providers:
+  # NanoBanana API 配置
+  nanobanana:
+    api_key: "demo_api_key_for_testing"
+    base_url: "https://api.nanobananaapi.ai"
+
+  # Gemini API 配置
+  gemini:
+    api_key: "your_api_key_here"
+    model: "gemini-2.5-flash-image"
+
+  # LinkAPI.ai API 配置
+  linkapi:
+    api_key: "sk-OYgGPxBYShs7halE6A2dZR8iaOgRrIoNZqqpGqCzG5upijVl"
+    model: "gemini-2.5-flash-image"
+
+  # BananaPro 中转站配置（NanoBanana PRO）
+  bananapro:
+    api_key: "sk-gNcpfR60ul6itd6TU7OnP2TIxBlOYXvRa77WIsKSCFTT6in6"
+    base_url: "https://own-jarvis-api.com"
+    model: "gemini-2.5-flash-image"
+
+  # OpenAI GPT Image 配置（通过 BananaPro 中转）
+  openai_image:
+    api_key: "sk-gNcpfR60ul6itd6TU7OnP2TIxBlOYXvRa77WIsKSCFTT6in6"
+    base_url: "https://own-jarvis-api.com"
+    model: "gpt-image-2"
+
+  # LinkAPI.ai Inpaint 配置（完整版）
+  linkapi_inpaint:
+    name: "LinkAPI.ai"
+    auth:
+      type: "header"
+      header_name: "x-goog-api-key"
+      api_key: "sk-OYgGPxBYShs7halE6A2dZR8iaOgRrIoNZqqpGqCzG5upijVl"
+    base_url: "https://linkapi.ai"
+    request_format:
+      image_field: "image"
+      image_encoding: "base64"
+      endpoint: "/v1beta/models/gemini-2.5-flash-image:generateContent"
+      method: "POST"
+      extra_params:
+        generationConfig:
+          responseModalities: ["IMAGE"]
+    response_mapping:
+      result_field: "candidates.0.content.parts"
+      image_field: "inlineData.data"
+
+# 处理参数
+processing:
+  # 默认编辑提示词（英文效果通常更好，避免watermark/logo等敏感词）
+  prompt: "Enhance this product photo by cleaning up the background."
+  # 轮询间隔（秒）
+  poll_interval: 2
+  # 最大轮询次数（超时时间 = poll_interval * max_polls)
+  max_polls: 60
+
+# 输出配置
+output:
+  # 输出格式: jpg/png/webp
+  format: "jpg"
+  # 输出质量 (1-100)
+  quality: 95
+  # 输出文件名后缀
+  suffix: "_clean"

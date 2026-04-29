@@ -1,0 +1,19 @@
+{
+  "provider": "OpenAI GPT Image",
+  "api_key": "c2stZ05jcGZSNjB1bDZpdGQ2VFU3T25QMlRJeEJsT1lYdlJhNzdXSXNLU0NGVFQ2aW42",
+  "prompt": "将图片中的5个人物做成史诗级IP海报，附带五行元素",
+  "output_quality": 95,
+  "output_format": "jpg",
+  "default_model": "gpt-image-2",
+  "prompt_templates": {
+    "通用去水印": "Enhance this product photo by cleaning up the background.",
+    "去除品牌标识": "Clean up this image by restoring it to its original clean state.",
+    "产品图优化": "Enhance this product photo with a clean, professional look.",
+    "清空背景文字": "Remove all text and characters from the background. Keep the main subject completely unchanged.",
+    "六分镜图模板": "Please help me generate 6 segmented carbon images based on the product image, and combine 4 segmented images into one image without any text. Your role is the top Tiktok UGC content strategist. The task is to create a 15 second, highly realistic video script with the style of 'Expert Good Product Sharing' based on the product images I uploaded. Your goal is not to create an advertisement, but to create a video that makes the audience feel like 'this is something sincerely recommended by the blogger I follow'. The script must follow the logic and style recommended by internet celebrities: 0-2 seconds should start from a \"real pain point\" and present a very realistic and even awkward common problem from the perspective of handheld selfies. The expression and tone of the creator must be genuine and resonant. Within 3 to 5 seconds, the 'secret weapon' will appear. Creators should introduce products one by one like sharing secrets. The camera should be casual, just like picking up a good item around you, highlighting the design or portability of the product. 6-12 seconds is the highlight of the 'OMG' effect display and the climax of the video. It demonstrates that the product addresses the 'pain points' in the most impactful way possible. The key is to capture the creator's genuine, slightly exaggerated expressions of surprise or satisfaction, allowing the audience to empathize. The suggestion of 13-15 seconds belongs to the type of \"buy quickly\". The creator restored the perspective of the selfie and made the final recommendation in a sincere and excited tone, as if chatting with their best friend. Finally, it must include a colloquial phone call and popular TikTok topic tags. When outputting, please ensure that the language of the script is currently popular and colloquial, and the scene description emphasizes the sense of \"imperfect\" reality, avoiding any overly professional camera language",
+    "三视人人台图模板": "根据输入的图片，生成图片三视图，要求人台图（假人模特），生成正面，侧面，背面，要求在一张图片里，保持产品一致性不变",
+    "增加清晰度": "增加图片的清晰度到4k",
+    "史诗级海报生成模板": "将图片中的5个人物做成史诗级IP海报，附带五行元素"
+  },
+  "selected_template": "史诗级海报生成模板"
+}

@@ -1,0 +1,24 @@
+# 图包去文字工具依赖
+
+# 核心依赖
+python-dotenv>=1.0.0
+Pillow>=10.0.0
+requests>=2.31.0
+numpy>=1.24.0
+pyyaml>=6.0.0
+
+# 可选：本地OCR (如果不使用API)
+# paddlepaddle>=2.5.0
+# paddleocr>=2.7.0
+# easyocr>=1.7.0
+
+# 可选：本地图像修复
+# lama-cleaner>=1.2.0
+# opencv-python>=4.8.0
+
+# 工具
+pathlib>=1.0.1
+tqdm>=4.66.0
+
+# GUI打包
+pyinstaller>=6.0.0

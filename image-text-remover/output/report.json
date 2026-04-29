@@ -1,0 +1,30 @@
+{
+  "report_info": {
+    "generated_at": "2026-04-28T23:24:09.338777",
+    "total_images": 1,
+    "success_count": 1,
+    "failed_count": 0,
+    "output_dir": "output"
+  },
+  "model_statistics": {
+    "gpt-image-2": {
+      "total": 1,
+      "success": 1
+    }
+  },
+  "results": [
+    {
+      "url": "D:\\360MoveData\\Users\\Troye Chen\\Desktop\\gpt image\\闵洋\\12333.jpg",
+      "filename": "12333",
+      "output_path": "output\\12333_clean.jpg",
+      "success": true,
+      "message": "处理成功",
+      "model": "gpt-image-2",
+      "reference_images": [
+        "D:\\360MoveData\\Users\\Troye Chen\\Desktop\\gpt image\\闵洋\\微信图片_2026-04-24_163127_091.jpg",
+        "D:\\360MoveData\\Users\\Troye Chen\\Desktop\\gpt image\\闵洋\\未命名.jpg"
+      ],
+      "timestamp": "2026-04-28T23:24:09.336256"
+    }
+  ]
+}

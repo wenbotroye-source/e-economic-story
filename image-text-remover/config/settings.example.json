@@ -1,0 +1,6 @@
+{
+  "provider": "gemini",
+  "api_key": "YOUR_API_KEY_HERE",
+  "model": "gemini-2.5-flash-image",
+  "output_dir": "./output"
+}
